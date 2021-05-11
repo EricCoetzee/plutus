@@ -31,3 +31,6 @@ import           Text.Printf         (printf)
 
 mkValidator :: Data -> Data -> Data -> ()
 mkValidator _ _ _ = ()
+
+validator :: Validator
+validator = mkValidatorScript $$(PlutusTx.compile [|| mkValidator ||])
