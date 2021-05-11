@@ -28,7 +28,6 @@ import           Prelude             (Semigroup (..))
 import           Text.Printf         (printf)
 
 {-# INLINABLE mkValidator #-}
-
 mkValidator :: Data -> Data -> Data -> ()
 mkValidator _ _ _ = ()
 
