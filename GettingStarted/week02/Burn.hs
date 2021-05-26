@@ -54,7 +54,7 @@ mkValidator :: Data -> Data -> Data -> () -- Data to Data to Data to Unit
 
 {- the simplest validator -}
 
-mkValidator _ _ _ = error() -- this example ignores all three arguments and returns unit as the result :: this validation will always fail
+mkValidator _ _ _ = traceError "NO WAY!" -- this example ignores all three arguments and returns unit as the result :: this validation will always fail but will trace the error
 -- this validator script doesn't care about the 3 arguments and will always succeed
 -- first argument is the datum
 -- the second argument is the redeemer 
