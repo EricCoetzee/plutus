@@ -52,7 +52,7 @@ mkValidator :: Data -> Data -> Data -> () -- Data to Data to Data to Unit
 
 {- the simplest validator -}
 
-mkValidator _ _ _ = () -- this example ignores all three arguments and returns unit as the result
+mkValidator _ _ _ = () -- this example ignores all three arguments and returns unit as the result :: For an error we add error () -> mkValidator _ _ _ = error ()
 -- this validator script doesn't care about the 3 arguments and will always succeed
 -- first argument is the datum
 -- the second argument is the redeemer 
