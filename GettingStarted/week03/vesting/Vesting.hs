@@ -1,4 +1,4 @@
-{- First Real World contract -}
+{- First Real World contract for adding beneficiary and deadline to the Datum -}
 {-# LANGUAGE DataKinds           #-}
 {-# LANGUAGE DeriveAnyClass      #-}
 {-# LANGUAGE DeriveGeneric       #-}
